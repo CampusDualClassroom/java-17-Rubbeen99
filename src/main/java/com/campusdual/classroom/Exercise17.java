@@ -2,18 +2,11 @@ package com.campusdual.classroom;
 
 public class Exercise17 {
 	public static int[] createEmptyIntArray(int positions) {
-		int[] intArray = new int[positions];
-		return intArray;
+		return new int[positions];
 	}
 
 	public static String[] createInitializedStringArray() {
-		String[] stringArray = new String[3];
-
-		stringArray[0] = "1";
-		stringArray[1] = "2";
-		stringArray[2] = "3";
-
-		return stringArray;
+		return new String[]{"1", "2", "3"};
 	}
 
 	public static void populateArray(int[] array, int index, int value) {
@@ -38,4 +31,3 @@ public class Exercise17 {
 		System.out.println(arrayLength(intArray));
 	}
 }
-
